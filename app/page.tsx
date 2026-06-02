@@ -1,13 +1,33 @@
 import Image from "next/image";
-import { ArrowUpRight, ChevronRight, Play, Plus, Sparkle, Zap } from "lucide-react";
+import {
+  ArrowUpRight,
+  ChevronRight,
+  Play,
+  Plus,
+  Sparkle,
+  Zap,
+} from "lucide-react";
 
-const categories = ["ALL PRODUCTS", "OUTERWEAR", "HOODIES", "PANTS", "CREWNECK", "T-SHIRTS"];
+const categories = [
+  "ALL PRODUCTS",
+  "OUTERWEAR",
+  "HOODIES",
+  "PANTS",
+  "CREWNECK",
+  "T-SHIRTS",
+];
 const products = [
   ["01", "STARNOVA GREY ZIPPER", "$128.75"],
   ["02", "TRENCH LIGHT BLUE POLO", "$128.75"],
-  ["03", "THE CRAFT SUNGLASSES", "$129.75"]
+  ["03", "THE CRAFT SUNGLASSES", "$129.75"],
 ];
-const partners = ["Sisyphus", "Epicurious", "FeatherDev", "Nietzsche", "Luminous"];
+const partners = [
+  "Sisyphus",
+  "Epicurious",
+  "FeatherDev",
+  "Nietzsche",
+  "Luminous",
+];
 
 export default function Home() {
   return (
@@ -46,15 +66,16 @@ export default function Home() {
           <div className="project-note">
             <span className="dot-label">LATEST PROJECT 2024</span>
             <p>
-              Wearing Modaé Studios is about more than just clothing. It's a statement
-              and reminder of not forgetting who you are and what makes you special.
+              Wearing Modaé Studios is about more than just clothing. It's a
+              statement and reminder of not forgetting who you are and what
+              makes you special.
             </p>
           </div>
           <article className="news-card">
             <span>DEC 15</span>
             <p>
-              Modaé was born with the purpose of representing every person who is
-              willing to be more real. More alive. More honest with himself.
+              Modaé was born with the purpose of representing every person who
+              is willing to be more real. More alive. More honest with himself.
             </p>
             <button>
               WATCH THE NEWS
@@ -67,12 +88,16 @@ export default function Home() {
       <section className="manifesto">
         <div className="side-copy">
           <span className="dot-label accent">ABOUT</span>
-          <p>It's a statement and reminder of not forgetting who you are and what makes you special.</p>
+          <p>
+            It's a statement and reminder of not forgetting who you are and what
+            makes you special.
+          </p>
           <div>
             <span className="dot-label accent">LATEST PROJECT 2024</span>
             <p>
-              We strongly believe that each one of us is different and paradoxically
-              that is precisely what we have in common as a community.
+              We strongly believe that each one of us is different and
+              paradoxically that is precisely what we have in common as a
+              community.
             </p>
             <a className="text-link">
               MORE ABOUT US <ArrowUpRight size={12} />
@@ -86,10 +111,20 @@ export default function Home() {
             <article>
               <span>T-SHIRT</span>
               <h3>ABOUT:BLANK X MODAÉ</h3>
-              <Image src="/assets/look-tee.webp" alt="Modaé white t-shirt look" width={1254} height={1254} />
+              <Image
+                src="/assets/look-tee.webp"
+                alt="Modaé white t-shirt look"
+                width={1254}
+                height={1254}
+              />
             </article>
             <article>
-              <Image src="/assets/look-jacket.webp" alt="Modaé dark jacket editorial look" width={1426} height={1103} />
+              <Image
+                src="/assets/look-jacket.webp"
+                alt="Modaé dark jacket editorial look"
+                width={1426}
+                height={1103}
+              />
               <span>JACKET</span>
               <h3>BONDOL NO COUNTER</h3>
             </article>
@@ -106,18 +141,28 @@ export default function Home() {
           <h2>WITH</h2>
         </header>
         <div className="video-frame">
-          <Image src="/assets/culture.webp" alt="Street culture editorial campaign" width={1646} height={956} />
+          <Image
+            src="/assets/culture.webp"
+            alt="Street culture editorial campaign"
+            width={1646}
+            height={956}
+          />
           <button aria-label="Play campaign video">
             <Play size={26} fill="currentColor" />
           </button>
-          <p>OUR PRODUCTS ARE ETHICALLY MANUFACTURED IN USA, ADHERING TO FAIR LABOR PRACTICES.</p>
+          <p>
+            OUR PRODUCTS ARE ETHICALLY MANUFACTURED IN USA, ADHERING TO FAIR
+            LABOR PRACTICES.
+          </p>
         </div>
         <div className="culture-copy">
           <div>
-            <a className="text-link">SHOP NOW <ArrowUpRight size={12} /></a>
+            <a className="text-link">
+              SHOP NOW <ArrowUpRight size={12} />
+            </a>
             <p>
-              Enjoy the days spent walking along the coast, listening to the melody of
-              nature by the crystal clear Atlantic Sea.
+              Enjoy the days spent walking along the coast, listening to the
+              melody of nature by the crystal clear Atlantic Sea.
             </p>
           </div>
           <h2>WITH HIGH-QUALITY CRAFTSMANSHIP</h2>
@@ -139,13 +184,24 @@ export default function Home() {
           <h2>EQUISITE PIECES FOR THE REFINED TASTE.</h2>
           <div>
             <h2>TAILORED</h2>
-            <p>Our products are ethically manufactured in USA, adhering to fair labor practices.</p>
+            <p>
+              Our products are ethically manufactured in USA, adhering to fair
+              labor practices.
+            </p>
           </div>
         </header>
         <div className="catalog-body">
           <figure className="product-figure">
-            <Image src="/assets/product.webp" alt="Modaé grey zipper product editorial" width={1023} height={1537} />
-            <figcaption>MODAÉ<br />X COLLAB</figcaption>
+            <Image
+              src="/assets/product.webp"
+              alt="Modaé grey zipper product editorial"
+              width={1023}
+              height={1537}
+            />
+            <figcaption>
+              MODAÉ
+              <br />X COLLAB
+            </figcaption>
           </figure>
           <div className="product-list">
             <div className="featured-row">
@@ -166,8 +222,13 @@ export default function Home() {
                 <strong>{price}</strong>
                 {number === "02" && (
                   <>
-                    <p>Light Blue Trench-Knit Polo Sweater crafted from soft, breathable cotton.</p>
-                    <a className="text-link">ADD TO CHART <ArrowUpRight size={12} /></a>
+                    <p>
+                      Light Blue Trench-Knit Polo Sweater crafted from soft,
+                      breathable cotton.
+                    </p>
+                    <a className="text-link">
+                      ADD TO CHART <ArrowUpRight size={12} />
+                    </a>
                   </>
                 )}
               </article>
@@ -178,19 +239,41 @@ export default function Home() {
       </section>
 
       <section className="strip">
-        <Image src="/assets/editorial-strip.webp" alt="Modaé editorial image strip" width={2017} height={780} />
+        <Image
+          src="/assets/editorial-strip.webp"
+          alt="Modaé editorial image strip"
+          width={2017}
+          height={780}
+        />
         <article>
           <span>/ 04</span>
-          <p>"OPTIMAL PRODUCT RANGE OF TWENTY AND COUNTING TO OPTIMIZE BUSINESS PROCESSES AND INCREASE EFFICIENCY."</p>
-          <a className="text-link">SHOP MORE <ArrowUpRight size={12} /></a>
+          <p>
+            "OPTIMAL PRODUCT RANGE OF TWENTY AND COUNTING TO OPTIMIZE BUSINESS
+            PROCESSES AND INCREASE EFFICIENCY."
+          </p>
+          <a className="text-link">
+            SHOP MORE <ArrowUpRight size={12} />
+          </a>
         </article>
       </section>
 
       <footer className="footer">
         <div className="footer-grid">
-          <p>ALL RIGHTS RESERVED.<br />TERM & CONDITIONS</p>
-          <p>ADDRESS<br />4140 PARKER RD. ALLENTOWN, NEW MEXICO 31134</p>
-          <p>X / INSTAGRAM / LINKEDIN<br />PRIVACY POLICY</p>
+          <p>
+            ALL RIGHTS RESERVED.
+            <br />
+            TERM & CONDITIONS
+          </p>
+          <p>
+            ADDRESS
+            <br />
+            4140 PARKER RD. ALLENTOWN, NEW MEXICO 31134
+          </p>
+          <p>
+            X / INSTAGRAM / LINKEDIN
+            <br />
+            PRIVACY POLICY
+          </p>
         </div>
         <div className="footer-meta">
           <span>MON 2 DEC \ 09:12 \ 27C</span>
@@ -198,7 +281,7 @@ export default function Home() {
         </div>
         <div className="footer-logo">MODAÉ</div>
         <div className="footer-bottom">
-          <a>COPYRIGHTMODAE_LEGAL NOTICE</a>
+          <a>COPYRIGHTMODAE_BAGUS WS</a>
           <a>
             BACK TO TOP <ChevronRight size={14} />
           </a>
